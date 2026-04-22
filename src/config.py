@@ -11,7 +11,7 @@ load_dotenv()
 def get_llm() -> ChatGoogleGenerativeAI:
     """Initialize Gemini 1.5 Flash with sensible defaults."""
     return ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         google_api_key=os.getenv("GOOGLE_API_KEY"),
         temperature=0.3,
     )
